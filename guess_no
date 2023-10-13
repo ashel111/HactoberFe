@@ -1,0 +1,14 @@
+import random
+min = int(input("Enter the min value: "))
+max = int(input("Enter the max value: "))
+r_num = random.randint(min,max)
+print("You will have 6 tries to guess the number! Good luck!")
+for i in range(0,6) :
+  x = int(input("Guess the number: "))
+  if x > r_num :
+    print("Your guess is higher than the number")
+  elif x < r_num:
+    print("Your guess is lower than the number")
+  else :
+    print("Your guess is correct! Congratulations")
+    break
